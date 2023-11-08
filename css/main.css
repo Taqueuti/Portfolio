@@ -12,7 +12,7 @@ main h1{
     margin-bottom: 40px;
 }
 
-.text{
+#sobre p{
     color: #ffffffff;
     text-align: center;
     width: 50%;
@@ -21,7 +21,7 @@ main h1{
 
 
 .container-cards{
-    display: flex;
+   display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
@@ -46,6 +46,7 @@ main h1{
 
 .cards:hover {
     background-color: #000000;
+    transition: all 1.5s;
 }
 
 .cards:hover p{
@@ -111,13 +112,9 @@ main h1{
     text-align: center;
 }
 
-
-.espelho:hover{
-    display: none;
-}
-
 .cards-projetos:hover .espelho{
-    display: none;
+    opacity: 0;
+    transition: all 1.7s;
 }
 
 
@@ -129,7 +126,7 @@ main h1{
     .espelho{
         display: flex;
         flex-direction: column;
-        width: 55%;
+        width: 53.5%;
     }
     .cards-projetos{
         width: 60%;
@@ -177,4 +174,19 @@ main h1{
     gap: 20px;
 }
 }
+
+
+@media(max-width:280px){
+    .espelho{
+        width: 50%;
+    }
+
+    .container-cards{
+       flex-direction: column;
+       gap: 10px;
+    }
+    
+}
+
+
 

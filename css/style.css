@@ -65,6 +65,9 @@ nav .togglebtn{
     cursor: pointer;
     display: none;
 }
+.navlinks li a:hover{
+    color: #007ced;
+}
 nav .togglebtn span{
     display: block;
     background-color: #007ced;
@@ -206,5 +209,13 @@ nav .navlinks li a{
     }
     .hero-text{
         padding: 40px 0;
+    }
+}
+
+
+@media(max-width:280px){
+    .btn-group{
+        display: flex;
+        flex-direction: column;
     }
 }

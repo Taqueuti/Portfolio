@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lucas Taqueuti</title>
+    <title>Lucas Taqueuti</title>
+    <link rel="icon" href="./src/imagens/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +21,7 @@
             <header>
                 <div class="logo">
                     <i class="fa-solid fa-l"></i>
-                    <div class="logo-text">Lucas Taqueuti</div>
+                    <div class="logo-text">ucas Taqueuti</div>
                 </div><!---logo-->
                 <nav>
                     <div class="togglebtn">
@@ -69,88 +72,58 @@
         </section>
 
         <section id="habilidades">
-
             <h1>Habilidades</h1>
-            <div class="container-cards">
-                <div class="cards">
-                    <i style="color: #f05033;" class="fa-brands fa-git-alt"></i>
-                    <p class="description">git</p>
-                </div><!---cards-->
-                <div class="cards">
-                    <i style="color: #eb502f;" class="fa-brands fa-html5"></i>
-                    <p class="description">html5</p>
-                </div><!---cards-->
-                <div class="cards">
-                    <i style="color: #58abd1;" class="fa-brands fa-css3-alt"></i>
-                    <p class="description">css3</p>
-                </div><!---cards-->
-                <div class="cards">
-                    <i style="color: #66dbfb;" class="fa-brands fa-react"></i>
-                    <p class="description">react native</p>
-                </div><!---cards-->
-                <div class="cards">
-                    <i style="color: #66dbfb;" class="fa-brands fa-react"></i>
-                    <p class="description">react</p>
-                </div><!---cards-->
-                <div class="cards">
-                    <i style="color: #f7df1e;" class="fa-brands fa-square-js"></i>
-                    <p class="description">JavaScript</p>
-                </div><!---cards-->
-            </div>
+            <div class="container-cards" id="cards-container">
+            </div><!----container-cards-->
         </section>
+
 
         <section id="projetos">
             <h1>Projetos</h1>
-            <div class="container-projetos">
-                <div class="cards-projetos">
-                    <a><img src="./src/imagens/medidor.jpg" /></a>
-                    <div class="espelho">
-                        <p>Medidor de consumo de Água</p>
-                    </div><!----espelho-->
-                </div><!----cards-projetos-->
-                <div class="cards-projetos">
-                    <a><img class="img-mobile" src="./src/imagens/conversor.jpg" /></a>
-                    <div class="espelho">
-                        <p>Conversor de milhas para quilômetros</p>
-                    </div><!----espelho-->
-                </div><!----cards-projetos-->
+            <div class="container-projetos" id="container-projetos">
             </div><!---container-projetos-->
         </section>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Conversor de milhas para quilômetros</h3>
+
+                <div class="container">
+                    <img src="./src/imagens/conversor.jpg">
+                    <p>Um aplicativo de conversão de milhas para quilômetros e de quilômetros para milhas. Utilizando váriaveis de estado para alterar valores em tempo real, props para enviar dados entre componentes e utilização de text inputs.</p>
+                </div>
+                <h4>Habilidades</h4>
+                <div class="skills">
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <a target="_blank" href="https://github.com/Taqueuti/Medidor"><i class="fa-brands fa-github"></i>
+            </div>
+        </div>
     </main>
 
     <footer>
         <h1>Contatos</h1>
-        <di id="contato" class="social">
-            <a target="_blank" href="https://www.facebook.com/lucas.taqueuti/?locale=pt_BR"><i class="fa-brands fa-facebook"></i><p>facebook</p></a>
-            
-            <a target="_blank" href="https://www.linkedin.com/in/lucas-taqueuti/"><i class="fa-brands fa-linkedin"></i><p>Linkedin</p></a>
-            <a href="https://www.instagram.com/lucastaqueuti/"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
-            <a target="_blank" href="https://github.com/Taqueuti"><i class="fa-brands fa-github"></i><p>GitHub</p></a>
-        </di><!---Social-->
+        <div id="contato" class="social">
+            <a target="_blank" href="https://www.facebook.com/lucas.taqueuti/?locale=pt_BR"><i
+                    class="fa-brands fa-facebook"></i>
+                <p>facebook</p>
+            </a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/lucas-taqueuti/"><i class="fa-brands fa-linkedin"></i>
+                <p>Linkedin</p>
+            </a>
+            <a href="https://www.instagram.com/lucastaqueuti/"><i class="fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+            </a>
+            <a target="_blank" href="https://github.com/Taqueuti"><i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
+            </a>
+        </div><!---Social-->
     </footer>
-
+    <script src="./scripts/projects.js"></script>
+    <script src="./scripts/skills.js"></script>
+    <script src="./scripts/typeWriter.js"></script>
 </body>
-
-
-<!---typed js para exrever o texto com efeito-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-<script>
-    /** criando botão de click ocultar barra de ocultação */
-    var togglebtn = document.querySelector(".togglebtn");
-    var nav = document.querySelector(".navlinks");
-    var links = document.querySelector(".navlinks li");
-
-    togglebtn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        nav.classList.toggle("open");
-    })
-
-    var typed = new Typed(".input", {
-        strings: ["Desenvolvedor Front-End", "Desenvolvedor Mobile"],
-        typedSpeed: 90,
-        backSpeed: 90,
-        loop: true
-    })
-</script>
 
 </html>
