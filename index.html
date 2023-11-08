@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Lucas Taqueuti</title>
-    <link rel="stylesheet" href="style.css">
-    <!--- Font awesome cdn font icon css --->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
     <div class="hero-header">
         <div class="wrapper">
             <header>
                 <div class="logo">
                     <i class="fa-solid fa-l"></i>
-                    <div class="logo-text">Lucas Taqueuti</div><!---logotext-->
+                    <div class="logo-text">Lucas Taqueuti</div>
                 </div><!---logo-->
                 <nav>
                     <div class="togglebtn">
@@ -25,73 +28,129 @@
                     </div><!--togglebtn-->
 
                     <ul class="navlinks">
-                       <li><a href="#">Inicio</a></li>
-                       <li><a href="#">Sobre</a></li>
-                       <li><a href="#">Portfolio</a></li>
-                       <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contatos</a></li>
                     </ul>
                 </nav>
 
             </header>
-
             <div class="container">
-
                 <div class="hero-pic">
-                    <img src="imagens/Main-foto.jpg" alt="Perfil foto">
+                    <img src="/src/imagens/Main-foto.jpg" alt="Perfil foto">
                 </div><!---hero-pic-->
 
             </div><!---container-->
 
             <div class="hero-text">
-
-                <h5>Olá, eu sou<span class="input"> Desenvolvedor Web</span></h5>
+                <h5 class="text-hello">Olá, eu sou <span class="input"></span></h5>
                 <h1>Lucas Taqueuti</h1>
-                <p>
-                    Profissional com ótima capacidade de
-                    comunicação e bons conhecimentos em
-                    Html, CSS e Javascript. Capaz de auxiliar na
-                    rotina diária e oferecer um serviço de
-                    qualidade, buscando soluções aos
-                    problemas apresentados.
-                </p>
-
                 <div class="btn-group">
-                    <a href="#" class="btn active">Baixar CV</a>
+                    <a href="./src/arquivos/Desenvolvedor Front-End Mobile .pdf" download="cv_Lucas"
+                        class="btn active">Baixar CV</a>
                     <a href="#" class="btn">Contato</a>
                 </div><!---btn-group-->
-                
-                <div class="social">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div><!---Social-->
-
-
             </div><!---Hero-text-->
-
         </div><!----wrapper-->
-
     </div><!---hero-header-->
-    <!---typed js para exrever o texto com efeito-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script>
-        /** criando botão de click ocultar barra de ocultação */
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
+    <main>
+        <section id="sobre">
+            <h1 class="title">Sobre</h1>
+            <p class="text">
+                Profissional com ótima capacidade de
+                comunicação e bons conhecimentos em
+                Html, CSS, React Native, React, Kotlin e Javascript. Capaz de auxiliar na
+                rotina diária e oferecer um serviço de
+                qualidade, buscando soluções aos
+                problemas apresentados.
+            </p>
+        </section>
 
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
+        <section id="habilidades">
 
-        var typed=new Typed(".input",{
-           strings:["Desenvolvedor Front-End", "Desenvolvedor Web"],
-           typedSpeed:60,
-           backSpeed:55,
-           loop: true
-        })
-    </script>
+            <h1>Habilidades</h1>
+            <div class="container-cards">
+                <div class="cards">
+                    <i style="color: #f05033;" class="fa-brands fa-git-alt"></i>
+                    <p class="description">git</p>
+                </div><!---cards-->
+                <div class="cards">
+                    <i style="color: #eb502f;" class="fa-brands fa-html5"></i>
+                    <p class="description">html5</p>
+                </div><!---cards-->
+                <div class="cards">
+                    <i style="color: #58abd1;" class="fa-brands fa-css3-alt"></i>
+                    <p class="description">css3</p>
+                </div><!---cards-->
+                <div class="cards">
+                    <i style="color: #66dbfb;" class="fa-brands fa-react"></i>
+                    <p class="description">react native</p>
+                </div><!---cards-->
+                <div class="cards">
+                    <i style="color: #66dbfb;" class="fa-brands fa-react"></i>
+                    <p class="description">react</p>
+                </div><!---cards-->
+                <div class="cards">
+                    <i style="color: #f7df1e;" class="fa-brands fa-square-js"></i>
+                    <p class="description">JavaScript</p>
+                </div><!---cards-->
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h1>Projetos</h1>
+            <div class="container-projetos">
+                <div class="cards-projetos">
+                    <a><img src="./src/imagens/medidor.jpg" /></a>
+                    <div class="espelho">
+                        <p>Medidor de consumo de Água</p>
+                    </div><!----espelho-->
+                </div><!----cards-projetos-->
+                <div class="cards-projetos">
+                    <a><img class="img-mobile" src="./src/imagens/conversor.jpg" /></a>
+                    <div class="espelho">
+                        <p>Conversor de milhas para quilômetros</p>
+                    </div><!----espelho-->
+                </div><!----cards-projetos-->
+            </div><!---container-projetos-->
+        </section>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <di id="contato" class="social">
+            <a target="_blank" href="https://www.facebook.com/lucas.taqueuti/?locale=pt_BR"><i class="fa-brands fa-facebook"></i><p>facebook</p></a>
+            
+            <a target="_blank" href="https://www.linkedin.com/in/lucas-taqueuti/"><i class="fa-brands fa-linkedin"></i><p>Linkedin</p></a>
+            <a href="https://www.instagram.com/lucastaqueuti/"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
+            <a target="_blank" href="https://github.com/Taqueuti"><i class="fa-brands fa-github"></i><p>GitHub</p></a>
+        </di><!---Social-->
+    </footer>
+
 </body>
+
+
+<!---typed js para exrever o texto com efeito-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    /** criando botão de click ocultar barra de ocultação */
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+    var links = document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+    var typed = new Typed(".input", {
+        strings: ["Desenvolvedor Front-End", "Desenvolvedor Mobile"],
+        typedSpeed: 90,
+        backSpeed: 90,
+        loop: true
+    })
+</script>
+
 </html>

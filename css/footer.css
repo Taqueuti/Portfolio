@@ -1,0 +1,46 @@
+footer{
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #007ced;
+}
+
+footer .social i{
+    color: #e5e5e5;
+    font-size: 5rem;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.social{
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+}
+
+.social p{
+    text-align: center;
+    margin-top: 15px;
+    color:  #ffffffff;
+}
+
+
+footer .social i:hover{
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
+@media(max-width:768px){
+    .social{
+        gap: 40px;
+        flex-direction: row;
+    }
+}
