@@ -175,6 +175,9 @@ nav .navlinks li a{
         top: 0;
     }
     nav .navlinks{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         position: absolute;
         top: 110px;
         right: -100%;
@@ -191,13 +194,16 @@ nav .navlinks li a{
    
     nav .navlinks li a{
         display: block;
-        margin-bottom: 15px;
         text-align: center;
+    }
+    nav .navlinks li a:hover{
+        color: #007ced;
     }
     nav .navlinks.open{
         right: 0;
-
     }
+
+    
 }
 
 @media(max-width:768px)
