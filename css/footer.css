@@ -1,7 +1,8 @@
 footer{
     display: flex;
+    border-top: #ffffffff solid 1px;
     margin-top: 100px;
-    gap: 20px;
+    gap: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -21,8 +22,9 @@ footer .social i{
     transition: 0.5s;
 }
 .social{
+    margin-right: 5%;
     display: flex;
-    gap: 100px;
+    gap: 70px;
     flex-direction: row;
 }
 
@@ -40,7 +42,15 @@ footer .social i:hover{
 
 @media(max-width:768px){
     .social{
-        gap: 40px;
-        flex-direction: column;
+        gap: 20px; 
     }
+
+    footer .social i{
+        font-size: 3rem;     
+    }
+
+    .social p{
+        font-size: .8rem;
+    }
+
 }

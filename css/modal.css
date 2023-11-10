@@ -9,13 +9,10 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-
-
 .modal .container{
     display: flex;
     flex-direction: column;
     border-bottom: solid 1px #000000;
-    gap: 50px;
   }
 .modal h3{
     text-align: center;
@@ -32,18 +29,21 @@
 
 .modal p{
     text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 15px;
 }
 
 .modal img{
-    height: 18rem;
-    width:  18rem;
+    height: 20rem;
+    width:  65%;
   }
 .modal-content {
     background-color: #ffffffff;
     margin: 0 auto;
+    border-radius: 3%;
     padding: 15px;
-    width: 50%;
+    width: 40%;
   }
 
 .modal .skills{
@@ -64,5 +64,12 @@
 }
 .close{
     cursor: pointer;
+}
+
+
+@media (max-width: 930px) {
+    .modal img{
+        height: 12rem;
+    }
 }
   
