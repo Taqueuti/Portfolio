@@ -71,5 +71,28 @@
     .modal img{
         height: 12rem;
     }
+
+    .modal-content {
+        background-color: #ffffffff;
+        margin: 0 auto;
+        border-radius: 3%;
+        padding: 15px;
+        width: 40%;
+      }
 }
-  
+
+
+@media (max-width: 400px) {
+
+    .modal-content {
+        background-color: #ffffffff;
+        margin: 0 auto;
+        border-radius: 3%;
+        width: 40%  auto;
+      }
+
+      .modal p{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: .7rem;
+    }
+}
