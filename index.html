@@ -8,6 +8,7 @@
     <title>Lucas Taqueuti</title>
     <link rel="icon" href="./src/imagens/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="src/css/burguer.css" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/modal.css">
@@ -24,11 +25,12 @@
                     <div class="logo-text">ucas Taqueuti</div>
                 </div><!---logo-->
                 <nav>
+                    <!---
                     <div class="togglebtn">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div><!--togglebtn-->
+                    </div>
 
                     <ul class="navlinks">
                         <li><a href="#">Inicio</a></li>
@@ -36,6 +38,29 @@
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#contato">Contatos</a></li>
+                    </ul>
+                    -->
+
+                    <a href="#" class="menu-burger-container">
+                        <i class="menu-burger"></i>
+                    </a>
+
+                    <ul class="links-container">
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#habilidades">Habilidades</a>
+                        </li>
+                        <li>
+                            <a href="#projetos">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#contato">Contatos</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -94,8 +119,8 @@
                 <h4>Habilidades</h4>
                 <div class="skills">
                 </div>
-                <a target="_blank" ><i class="fa-brands fa-github"></i>
-                <a class="link" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <a target="_blank"><i class="fa-brands fa-github"></i>
+                    <a class="link" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
         </div>
     </main>
@@ -119,6 +144,7 @@
             </a>
         </div><!---Social-->
     </footer>
+    <script src="./scripts/burguer.js" defer></script>
     <script src="./scripts/projects.js"></script>
     <script src="./scripts/skills.js"></script>
     <script src="./scripts/typeWriter.js"></script>
